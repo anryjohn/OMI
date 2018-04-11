@@ -1,6 +1,6 @@
 .navbar-custom {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
   background-color: rgba(192,192,192, 0);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -13,7 +13,7 @@
 }
 
 .navbar.scrolled {
-  background-color: rgba(192,192,192, .7);
+  background-color: rgba(192,192,192, .95);
 }
 
 .navbar-custom:hover {
@@ -51,5 +51,13 @@
 }
 
 .navbar-custom .navbar-nav .nav-item:hover .nav-link {
+     color: rgba(255,255,255,1)!important;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link.scrolled {
+  color: rgba(0,0,0,1)!important;
+}
+
+.navbar-custom .navbar-nav .nav-item:hover .nav-link.scrolled {
      color: rgba(255,255,255,1)!important;
 }

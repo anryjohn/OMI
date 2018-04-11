@@ -1,11 +1,13 @@
 function checkScroll(){
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
-    if($(window).scrollTop() > startY - 35){
+    if($(window).scrollTop() > startY - 60){
         $('.navbar').addClass("scrolled");
+        $('.nav-link').addClass("scrolled");
     }
     else{
         $('.navbar').removeClass("scrolled");
+        $('.nav-link').removeClass("scrolled");
     }
 }
 
