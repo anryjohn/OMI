@@ -1,0 +1,34 @@
+@-webkit-keyframes fadeIn { from { z-index: 100; opacity:1; } to { z-index: 0; opacity:0; opacity: 1\9; } }
+@-moz-keyframes fadeIn { from { z-index: 100; opacity:1; } to { z-index: 0; opacity:0; opacity: 1\9; } }
+@keyframes fadeIn { from { z-index: 100; opacity:1; } to { z-index: 0; opacity:0; opacity: 1\9; } }
+
+.fade-in {
+    opacity:1;  
+    -webkit-animation:fadeIn ease-in 1; 
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+/*---make a basic box ---*/
+.front{
+width: 100%;
+height: 100%;
+margin: auto;
+position: fixed;
+z-index: 100;
+color: white;  
+float: left;
+background: #27a5d2;
+}
